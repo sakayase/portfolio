@@ -1,9 +1,8 @@
 .about {
-    background-color: black;
+    background-color: $black;
     display: flex;
     flex-direction: column;
     width: 90%;
-    font-size: 0.7rem;
 
     &>* { /* tt les enfants de .about (parent) */
         color: white;
@@ -11,47 +10,48 @@
         margin: 0px;
     }
 
+    .about--main-title {
+        font-size: 1.75rem; // == 28px
+        font-weight: normal;
+        font-family: $second-title-font;
+    }
+
     .about--title-div {
         display: flex;
+
+        .about--title-div--hr {
+            width: 110px;
+            color: $yellow;
+            height: 0.0001rem;
+            margin: 0 10px 0 0;
+            align-self: center;
+        }
+
+        .about--title-div--second-title {
+            margin: 0;
+            font-size: 0.9375rem; // == 15px
+            font-weight: normal;
+            font-family: $second-title-font;
+        }
     }
 
-    
-}
-
-/*.about--div::before {
-    display: block;
-    height: 5px;
-    width: 7%;
-    vertical-align: center;
-    margin-right: 8px;
-    border-top: 1px solid #ffc700;
-    content: "";
-}
-
-
-
-
-    &>div>* {
-        margin: 0px;
+    .about--description {
+        padding-left: 110+10+2px;  // 110px du hr width + 10 du hr margin + 2 des borders du hr
+        font-size: 0.6875rem; // == 11px
+        margin-bottom: 5px;
     }
-}
 
-.about--div--hr {
-    width: 100%;
-    color: #FFC700;
-    height: 0.0001rem;
-    margin-right: 10px;
-    margin-top: 1.5%;
-}
+    .about--list {
+        padding-left: 110+10+2px;  // 110px du hr width + 10 du hr margin + 2 des borders du hr
+        display: flex;
+        list-style-type: none;
+        font-size: 0.5625rem; // == 9px
+        font-family: $list-font;
+        color: $yellow;
+        margin-bottom: 5px;
+        .about--list--element {
+            margin-right: 5px;
+        }
+    }
 
-.about--main-title {
-    font-family: $second-title-font;
-    font-weight: 400;
 }
-
-.about--div--second-title {
-    margin-bottom: 10px !important;
-    font-family: $second-title-font;
-    font-weight: 400;
-}
-*/

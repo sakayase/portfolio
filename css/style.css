@@ -1,52 +1,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Metrophobic&family=Share+Tech+Mono&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap");
 .about {
-  background-color: black;
+  background-color: #000000;
   display: flex;
   flex-direction: column;
-  width: 90%;
-  font-size: 0.7rem; }
+  width: 90%; }
   .about > * {
     /* tt les enfants de .about (parent) */
     color: white;
     font-family: "Ubuntu Mono", monospace;
     margin: 0px; }
+  .about .about--main-title {
+    font-size: 1.75rem;
+    font-weight: normal;
+    font-family: "Share Tech Mono", monospace; }
   .about .about--title-div {
     display: flex; }
-
-/*.about--div::before {
-    display: block;
-    height: 5px;
-    width: 7%;
-    vertical-align: center;
-    margin-right: 8px;
-    border-top: 1px solid #ffc700;
-    content: "";
-}
-
-
-
-
-    &>div>* {
-        margin: 0px;
-    }
-}
-
-.about--div--hr {
-    width: 100%;
+    .about .about--title-div .about--title-div--hr {
+      width: 110px;
+      color: #FFC700;
+      height: 0.0001rem;
+      margin: 0 10px 0 0;
+      align-self: center; }
+    .about .about--title-div .about--title-div--second-title {
+      margin: 0;
+      font-size: 0.9375rem;
+      font-weight: normal;
+      font-family: "Share Tech Mono", monospace; }
+  .about .about--description {
+    padding-left: 122px;
+    font-size: 0.6875rem;
+    margin-bottom: 5px; }
+  .about .about--list {
+    padding-left: 122px;
+    display: flex;
+    list-style-type: none;
+    font-size: 0.5625rem;
+    font-family: "VT323", monospace;
     color: #FFC700;
-    height: 0.0001rem;
-    margin-right: 10px;
-    margin-top: 1.5%;
-}
+    margin-bottom: 5px; }
+    .about .about--list .about--list--element {
+      margin-right: 5px; }
 
-.about--main-title {
-    font-family: $second-title-font;
-    font-weight: 400;
-}
-
-.about--div--second-title {
-    margin-bottom: 10px !important;
-    font-family: $second-title-font;
-    font-weight: 400;
-}
-*/
+.text-style {
+  color: #FF9900; }
