@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Metrophobic&family=Share+Tech+Mono&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap");
+.about {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  font-size: 0.7rem; }
+  .about > * {
+    /* tt les enfants de .about (parent) */
+    color: white;
+    font-family: "Ubuntu Mono", monospace;
+    margin: 0px; }
+  .about .about--title-div {
+    display: flex; }
+
+/*.about--div::before {
+    display: block;
+    height: 5px;
+    width: 7%;
+    vertical-align: center;
+    margin-right: 8px;
+    border-top: 1px solid #ffc700;
+    content: "";
+}
+
+
+
+
+    &>div>* {
+        margin: 0px;
+    }
+}
+
+.about--div--hr {
+    width: 100%;
+    color: #FFC700;
+    height: 0.0001rem;
+    margin-right: 10px;
+    margin-top: 1.5%;
+}
+
+.about--main-title {
+    font-family: $second-title-font;
+    font-weight: 400;
+}
+
+.about--div--second-title {
+    margin-bottom: 10px !important;
+    font-family: $second-title-font;
+    font-weight: 400;
+}
+*/

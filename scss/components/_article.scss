@@ -1,0 +1,57 @@
+.about {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    font-size: 0.7rem;
+
+    &>* { /* tt les enfants de .about (parent) */
+        color: white;
+        font-family: $content-font;
+        margin: 0px;
+    }
+
+    .about--title-div {
+        display: flex;
+    }
+
+    
+}
+
+/*.about--div::before {
+    display: block;
+    height: 5px;
+    width: 7%;
+    vertical-align: center;
+    margin-right: 8px;
+    border-top: 1px solid #ffc700;
+    content: "";
+}
+
+
+
+
+    &>div>* {
+        margin: 0px;
+    }
+}
+
+.about--div--hr {
+    width: 100%;
+    color: #FFC700;
+    height: 0.0001rem;
+    margin-right: 10px;
+    margin-top: 1.5%;
+}
+
+.about--main-title {
+    font-family: $second-title-font;
+    font-weight: 400;
+}
+
+.about--div--second-title {
+    margin-bottom: 10px !important;
+    font-family: $second-title-font;
+    font-weight: 400;
+}
+*/
