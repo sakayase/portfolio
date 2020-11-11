@@ -1,8 +1,7 @@
 .about {
-    background-color: $black;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 95%;
 
     &>* { /* tt les enfants de .about (parent) */
         color: white;
@@ -14,6 +13,7 @@
         font-size: 1.75rem; // == 28px
         font-weight: normal;
         font-family: $second-title-font;
+        padding-left: 5px;
     }
 
     .about--title-div {
@@ -53,5 +53,97 @@
             margin-right: 5px;
         }
     }
+}
 
+
+
+.hobby {
+    display: flex;
+    flex-direction: column;
+
+    &>* { /* tt les enfants de .hobby (parent) */
+        color: white;
+        font-family: $content-font;
+        margin: 0px;
+    }
+
+    .hobby--main-title {
+        font-size: 1.75rem; // == 28px
+        font-weight: normal;
+        font-family: $second-title-font;
+        padding-left: 5px;
+    }
+
+    .hobby--title-div {
+        display: flex;
+
+        
+
+        .hobby--title-div--hr {
+            width: 75px;
+            color: $yellow;
+            height: 0.0001rem;
+            align-self: center;
+        }
+
+        .hobby--title-div--hr__left {
+            margin: 0 10px 0 0;
+        }
+
+        .hobby--title-div--hr__right {
+            margin: 0 0 0 10px;
+        }
+
+        .hobby--title-div--second-title {
+            margin: 0;
+            font-size: 0.9375rem; // == 15px
+            font-weight: normal;
+            font-family: $second-title-font;
+        }
+    }
+
+    .hobby--title-div__right {
+        align-self: flex-end;
+    }
+
+    .hobby--title-div__left {
+        align-self: flex-start;
+    }
+
+
+    .hobby--description {
+        font-size: 0.6875rem; // == 11px
+        margin-bottom: 5px;
+    }
+
+    .hobby--description__left {
+        padding-left: 75+10+2px;  // 75px du hr width + 10 du hr margin + 2 des borders du hr
+    }
+
+    .hobby--description__right {
+        padding-right: 75+10+2px;  // 75px du hr width + 10 du hr margin + 2 des borders du hr
+        text-align: right;
+    }
+
+    .hobby--list {
+        padding-left: 110+10+2px;  // 110px du hr width + 10 du hr margin + 2 des borders du hr
+        display: flex;
+        list-style-type: none;
+        font-size: 0.5625rem; // == 9px
+        font-family: $list-font;
+        color: $yellow;
+        margin-bottom: 5px;
+        .about--list--element {
+            margin-right: 5px;
+        }
+    }
+
+    .hobby--image {
+        width: 250px;
+        margin: 10px;
+    }
+
+    .hobby--image__right {
+        align-self: flex-end;
+    }
 }
