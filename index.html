@@ -85,11 +85,30 @@
         <a href="https://relaxed-yalow-b57147.netlify.app/"><img src="img/challenge1.PNG" alt="" class="portfolio--image"></a>
     </section>
 
-    <div class="container--contact--title">
-        <hr class="contact--title--hr__left">
-        <h2 class="contact--title">Contact</h2>
-        <hr class="contact--title--hr__right">
-    </div>
+    <section class="contact">    
+        <div class="container--contact--title">
+            <hr class="contact--title--hr__left">
+            <h2 class="contact--title">Contact</h2>
+            <hr class="contact--title--hr__right">
+        </div>
+
+        <div class="contact--title-div contact--title-div__left">
+            <hr class="contact--title-div--hr contact--title-div--hr__left">
+            <h3 class="contact--title-div--second-title contact--title-div--second-title__left">Form</h3>
+        </div>
+
+        <form action="" class="contact-form">
+            <label for="name"></label>
+            <input type="text" name="name-input" placeholder="Your name here" minlenght="2" id="name" class="name-input">
+            <label for="email"></label>
+            <input type="text" name="email-input" placeholder="Your email here" id="email" class="email-input">
+            <label for="message"></label>
+            <textarea name="message-input" id="message" class="message-input"></textarea>
+            <input type="submit" value="Send" class="send-input">
+        </form>
+
+    </section>
+
 
 </body>
 </html>
