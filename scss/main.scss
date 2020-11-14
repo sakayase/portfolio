@@ -2,15 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Metrophobic&family=Share+Tech+Mono&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=VT323&display=swap');
 
 @import "_base.scss";
-@import "components/_article.scss";
-
-
-.text-style {
-    color: $orange;  
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient($black, $grey);
-}
+@import "components/_section.scss";
+@import "_layout.scss";
+@import "_global.scss";

@@ -5,27 +5,18 @@
   width: 95%; }
   .about > * {
     /* tt les enfants de .about (parent) */
-    color: white;
-    font-family: "Ubuntu Mono", monospace;
     margin: 0px; }
   .about .about--main-title {
-    font-size: 1.75rem;
-    font-weight: normal;
-    font-family: "Share Tech Mono", monospace;
     padding-left: 5px; }
   .about .about--title-div {
     display: flex; }
     .about .about--title-div .about--title-div--hr {
       width: 110px;
-      color: #FFC700;
       height: 0.0001rem;
       margin: 0 10px 0 0;
       align-self: center; }
     .about .about--title-div .about--title-div--second-title {
-      margin: 0;
-      font-size: 0.9375rem;
-      font-weight: normal;
-      font-family: "Share Tech Mono", monospace; }
+      margin: 0; }
   .about .about--description {
     padding-left: 122px;
     font-size: 0.6875rem;
@@ -35,8 +26,6 @@
     display: flex;
     list-style-type: none;
     font-size: 0.5625rem;
-    font-family: "VT323", monospace;
-    color: #FFC700;
     margin-bottom: 5px; }
     .about .about--list .about--list--element {
       margin-right: 5px; }
@@ -46,19 +35,13 @@
   flex-direction: column; }
   .hobby > * {
     /* tt les enfants de .hobby (parent) */
-    color: white;
-    font-family: "Ubuntu Mono", monospace;
     margin: 0px; }
   .hobby .hobby--main-title {
-    font-size: 1.75rem;
-    font-weight: normal;
-    font-family: "Share Tech Mono", monospace;
     padding-left: 5px; }
   .hobby .hobby--title-div {
     display: flex; }
     .hobby .hobby--title-div .hobby--title-div--hr {
       width: 75px;
-      color: #FFC700;
       height: 0.0001rem;
       align-self: center; }
     .hobby .hobby--title-div .hobby--title-div--hr__left {
@@ -66,10 +49,7 @@
     .hobby .hobby--title-div .hobby--title-div--hr__right {
       margin: 0 0 0 10px; }
     .hobby .hobby--title-div .hobby--title-div--second-title {
-      margin: 0;
-      font-size: 0.9375rem;
-      font-weight: normal;
-      font-family: "Share Tech Mono", monospace; }
+      margin: 0; }
   .hobby .hobby--title-div__right {
     align-self: flex-end; }
   .hobby .hobby--title-div__left {
@@ -82,21 +62,47 @@
   .hobby .hobby--description__right {
     padding-right: 87px;
     text-align: right; }
-  .hobby .hobby--list {
-    padding-left: 122px;
-    display: flex;
-    list-style-type: none;
-    font-size: 0.5625rem;
-    font-family: "VT323", monospace;
-    color: #FFC700;
-    margin-bottom: 5px; }
-    .hobby .hobby--list .about--list--element {
-      margin-right: 5px; }
   .hobby .hobby--image {
-    width: 250px;
+    width: 69%;
     margin: 10px; }
   .hobby .hobby--image__right {
     align-self: flex-end; }
+
+.portfolio {
+  display: flex;
+  flex-direction: column; }
+  .portfolio > * {
+    /* tt les enfants de .portfolio (parent) */
+    margin: 0px; }
+  .portfolio .portfolio--main-title {
+    padding-left: 5px; }
+  .portfolio .portfolio--title-div {
+    display: flex; }
+    .portfolio .portfolio--title-div .portfolio--title-div--hr {
+      width: 75px;
+      height: 0.0001rem;
+      align-self: center; }
+    .portfolio .portfolio--title-div .portfolio--title-div--hr__left {
+      margin: 0 10px 0 0; }
+    .portfolio .portfolio--title-div .portfolio--title-div--hr__right {
+      margin: 0 0 0 10px; }
+    .portfolio .portfolio--title-div .portfolio--title-div--second-title {
+      margin: 0; }
+  .portfolio .portfolio--title-div__right {
+    align-self: flex-end; }
+  .portfolio .portfolio--title-div__left {
+    align-self: flex-start; }
+  .portfolio .portfolio--description {
+    font-size: 0.6875rem;
+    margin-bottom: 5px; }
+  .portfolio .portfolio--description__left {
+    padding-left: 87px; }
+  .portfolio .portfolio--description__right {
+    padding-right: 87px;
+    text-align: right; }
+  .portfolio .portfolio--image {
+    width: 90%;
+    margin: 10px 5% 10px 5%; }
 
 .text-style {
   color: #FF9900; }
@@ -104,4 +110,23 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(#000000, #3c3c3c); }
+  background: linear-gradient(#000000, #3c3c3c);
+  color: white;
+  font-family: "Ubuntu Mono", monospace; }
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: normal;
+  font-family: "Share Tech Mono", monospace; }
+
+h3 {
+  font-size: 0.9375rem;
+  font-weight: normal;
+  font-family: "Share Tech Mono", monospace; }
+
+hr {
+  color: #FFC700; }
+
+ul {
+  font-family: "VT323", monospace;
+  color: #FFC700; }

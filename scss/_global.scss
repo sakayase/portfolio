@@ -1,0 +1,32 @@
+.text-style {           //</ & > oranges
+    color: $orange;  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient($black, $grey);
+    color: white;
+    font-family: $content-font;
+}
+
+h2 {
+    font-size: 1.75rem; // == 28px
+    font-weight: normal;
+    font-family: $second-title-font;
+}
+
+h3 {
+    font-size: 0.9375rem; // == 15px
+    font-weight: normal;
+    font-family: $second-title-font;
+}
+
+hr {
+    color: $yellow;
+}
+
+ul {
+    font-family: $list-font;
+    color: $yellow;
+}

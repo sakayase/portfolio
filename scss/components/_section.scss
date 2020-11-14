@@ -4,15 +4,10 @@
     width: 95%;
 
     &>* { /* tt les enfants de .about (parent) */
-        color: white;
-        font-family: $content-font;
         margin: 0px;
     }
 
     .about--main-title {
-        font-size: 1.75rem; // == 28px
-        font-weight: normal;
-        font-family: $second-title-font;
         padding-left: 5px;
     }
 
@@ -21,7 +16,6 @@
 
         .about--title-div--hr {
             width: 110px;
-            color: $yellow;
             height: 0.0001rem;
             margin: 0 10px 0 0;
             align-self: center;
@@ -29,9 +23,6 @@
 
         .about--title-div--second-title {
             margin: 0;
-            font-size: 0.9375rem; // == 15px
-            font-weight: normal;
-            font-family: $second-title-font;
         }
     }
 
@@ -46,8 +37,6 @@
         display: flex;
         list-style-type: none;
         font-size: 0.5625rem; // == 9px
-        font-family: $list-font;
-        color: $yellow;
         margin-bottom: 5px;
         .about--list--element {
             margin-right: 5px;
@@ -62,15 +51,10 @@
     flex-direction: column;
 
     &>* { /* tt les enfants de .hobby (parent) */
-        color: white;
-        font-family: $content-font;
         margin: 0px;
     }
 
     .hobby--main-title {
-        font-size: 1.75rem; // == 28px
-        font-weight: normal;
-        font-family: $second-title-font;
         padding-left: 5px;
     }
 
@@ -81,7 +65,6 @@
 
         .hobby--title-div--hr {
             width: 75px;
-            color: $yellow;
             height: 0.0001rem;
             align-self: center;
         }
@@ -96,9 +79,6 @@
 
         .hobby--title-div--second-title {
             margin: 0;
-            font-size: 0.9375rem; // == 15px
-            font-weight: normal;
-            font-family: $second-title-font;
         }
     }
 
@@ -125,25 +105,77 @@
         text-align: right;
     }
 
-    .hobby--list {
-        padding-left: 110+10+2px;  // 110px du hr width + 10 du hr margin + 2 des borders du hr
-        display: flex;
-        list-style-type: none;
-        font-size: 0.5625rem; // == 9px
-        font-family: $list-font;
-        color: $yellow;
-        margin-bottom: 5px;
-        .about--list--element {
-            margin-right: 5px;
-        }
-    }
-
     .hobby--image {
-        width: 250px;
+        width: 69%;
         margin: 10px;
     }
 
     .hobby--image__right {
         align-self: flex-end;
+    }
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+
+    &>* { /* tt les enfants de .portfolio (parent) */
+        margin: 0px;
+    }
+
+    .portfolio--main-title {
+        padding-left: 5px;
+    }
+
+    .portfolio--title-div {
+        display: flex;
+
+        
+
+        .portfolio--title-div--hr {
+            width: 75px;
+            height: 0.0001rem;
+            align-self: center;
+        }
+
+        .portfolio--title-div--hr__left {
+            margin: 0 10px 0 0;
+        }
+
+        .portfolio--title-div--hr__right {
+            margin: 0 0 0 10px;
+        }
+
+        .portfolio--title-div--second-title {
+            margin: 0;
+        }
+    }
+
+    .portfolio--title-div__right {
+        align-self: flex-end;
+    }
+
+    .portfolio--title-div__left {
+        align-self: flex-start;
+    }
+
+
+    .portfolio--description {
+        font-size: 0.6875rem; // == 11px
+        margin-bottom: 5px;
+    }
+
+    .portfolio--description__left {
+        padding-left: 75+10+2px;  // 75px du hr width + 10 du hr margin + 2 des borders du hr
+    }
+
+    .portfolio--description__right {
+        padding-right: 75+10+2px;  // 75px du hr width + 10 du hr margin + 2 des borders du hr
+        text-align: right;
+    }
+
+    .portfolio--image {
+        width: 90%;
+        margin: 10px 5% 10px 5%;
     }
 }
