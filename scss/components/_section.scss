@@ -11,6 +11,10 @@
         padding-left: 5px;
     }
 
+    .about--main-title::before {
+        display: none;
+    }
+
     .about--title-div {
         display: flex;
 
@@ -24,6 +28,11 @@
         .about--title-div--second-title {
             margin: 0;
         }
+
+        .about--title-div--second-title::before {
+            display: none;
+        }
+        
     }
 
     .about--description {
@@ -58,6 +67,10 @@
         padding-left: 5px;
     }
 
+    .hobby--main-title::before {
+        display: none;
+    }
+
     .hobby--title-div {
         display: flex;
 
@@ -72,7 +85,7 @@
         .hobby--title-div--hr__left {
             margin: 0 10px 0 0;
         }
-
+        
         .hobby--title-div--hr__right {
             margin: 0 0 0 10px;
         }
@@ -80,6 +93,15 @@
         .hobby--title-div--second-title {
             margin: 0;
         }
+
+        .hobby--title-div--second-title__right::after {
+            display: none;
+        }
+
+        .hobby--title-div--second-title__left::before {
+            display: none;
+        }
+
     }
 
     .hobby--title-div__right {
@@ -127,6 +149,10 @@
         padding-left: 5px;
     }
 
+    .portfolio--main-title::before {
+        display: none;
+    }
+
     .portfolio--title-div {
         display: flex;
 
@@ -148,6 +174,14 @@
 
         .portfolio--title-div--second-title {
             margin: 0;
+        }
+
+        .portfolio--title-div--second-title__left::before {
+            display: none;
+        }
+
+        .portfolio--title-div--second-title__right::after {
+            display: none;
         }
     }
 

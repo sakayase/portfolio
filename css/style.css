@@ -8,6 +8,8 @@
     margin: 0px; }
   .about .about--main-title {
     padding-left: 5px; }
+  .about .about--main-title::before {
+    display: none; }
   .about .about--title-div {
     display: flex; }
     .about .about--title-div .about--title-div--hr {
@@ -17,6 +19,8 @@
       align-self: center; }
     .about .about--title-div .about--title-div--second-title {
       margin: 0; }
+    .about .about--title-div .about--title-div--second-title::before {
+      display: none; }
   .about .about--description {
     padding-left: 122px;
     font-size: 0.6875rem;
@@ -38,6 +42,8 @@
     margin: 0px; }
   .hobby .hobby--main-title {
     padding-left: 5px; }
+  .hobby .hobby--main-title::before {
+    display: none; }
   .hobby .hobby--title-div {
     display: flex; }
     .hobby .hobby--title-div .hobby--title-div--hr {
@@ -50,6 +56,10 @@
       margin: 0 0 0 10px; }
     .hobby .hobby--title-div .hobby--title-div--second-title {
       margin: 0; }
+    .hobby .hobby--title-div .hobby--title-div--second-title__right::after {
+      display: none; }
+    .hobby .hobby--title-div .hobby--title-div--second-title__left::before {
+      display: none; }
   .hobby .hobby--title-div__right {
     align-self: flex-end; }
   .hobby .hobby--title-div__left {
@@ -76,6 +86,8 @@
     margin: 0px; }
   .portfolio .portfolio--main-title {
     padding-left: 5px; }
+  .portfolio .portfolio--main-title::before {
+    display: none; }
   .portfolio .portfolio--title-div {
     display: flex; }
     .portfolio .portfolio--title-div .portfolio--title-div--hr {
@@ -88,6 +100,10 @@
       margin: 0 0 0 10px; }
     .portfolio .portfolio--title-div .portfolio--title-div--second-title {
       margin: 0; }
+    .portfolio .portfolio--title-div .portfolio--title-div--second-title__left::before {
+      display: none; }
+    .portfolio .portfolio--title-div .portfolio--title-div--second-title__right::after {
+      display: none; }
   .portfolio .portfolio--title-div__right {
     align-self: flex-end; }
   .portfolio .portfolio--title-div__left {
@@ -119,10 +135,26 @@ h2 {
   font-weight: normal;
   font-family: "Share Tech Mono", monospace; }
 
+h2::after {
+  content: "/>";
+  color: #FF9900; }
+
+h2::before {
+  content: "<";
+  color: #FF9900; }
+
 h3 {
   font-size: 0.9375rem;
   font-weight: normal;
   font-family: "Share Tech Mono", monospace; }
+
+h3::after {
+  content: "/>";
+  color: #FF9900; }
+
+h3::before {
+  content: "<";
+  color: #FF9900; }
 
 hr {
   color: #FFC700; }

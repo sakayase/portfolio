@@ -16,10 +16,30 @@ h2 {
     font-family: $second-title-font;
 }
 
+h2::after {
+    content: "/>";
+    color: $orange;  
+}
+
+h2::before {
+    content: "<";
+    color: $orange;
+}
+
 h3 {
     font-size: 0.9375rem; // == 15px
     font-weight: normal;
     font-family: $second-title-font;
+}
+
+h3::after {
+    content: "/>";
+    color: $orange;  
+}
+
+h3::before {
+    content: "<";
+    color: $orange;
 }
 
 hr {
