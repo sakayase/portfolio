@@ -188,7 +188,7 @@ ul {
   .contact--title-div .contact--title-div--second-title__left::before {
     display: none; }
 
-.contact-form {
+.contact--form {
   display: flex;
   margin: 10px auto;
   flex-direction: column;
@@ -224,3 +224,39 @@ ul {
   color: white;
   background-color: #FFC700;
   align-self: flex-end; }
+
+.contact--info {
+  display: flex;
+  flex-direction: column; }
+  .contact--info > * {
+    /* tt les enfants de .contact (parent) */
+    margin: 0px; }
+  .contact--info .contact--title-div {
+    display: flex;
+    align-self: flex-end; }
+    .contact--info .contact--title-div .contact--title-div--hr {
+      width: 75px;
+      height: 0.0001rem;
+      align-self: center; }
+    .contact--info .contact--title-div .contact--title-div--hr__right {
+      margin: 0 0 0 10px; }
+    .contact--info .contact--title-div .contact--title-div--second-title {
+      margin: 0; }
+    .contact--info .contact--title-div .contact--title-div--second-title__right::after {
+      display: none; }
+  .contact--info .contact--title-div__right {
+    align-self: flex-end; }
+  .contact--info .contact--info--list {
+    list-style-type: none;
+    text-align: right;
+    padding-right: 87px;
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 0.6875rem;
+    color: white; }
+  .contact--info .contact--info--list--element__highlighted {
+    color: #FFC700; }
+  .contact--info .contact--info--list--element__adress::before {
+    color: #FFC700;
+    font-size: 0.75rem;
+    padding-right: 10px;
+    content: "<<"; }

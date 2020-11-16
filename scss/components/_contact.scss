@@ -42,7 +42,7 @@
 
 
 
-.contact-form {
+.contact--form {
     display: flex;
     margin: 10px auto;
     flex-direction: column;
@@ -83,4 +83,63 @@
     color: white;
     background-color: $yellow;
     align-self: flex-end;
+}
+
+
+.contact--info {
+    display: flex;
+    flex-direction: column;
+
+    &>* { /* tt les enfants de .contact (parent) */
+        margin: 0px;
+    }
+    .contact--title-div {
+        display: flex;
+        align-self: flex-end;
+
+        
+
+        .contact--title-div--hr {
+            width: 75px;
+            height: 0.0001rem;
+            align-self: center;
+        }
+        
+        .contact--title-div--hr__right {
+            margin: 0 0 0 10px;
+        }
+
+        .contact--title-div--second-title {
+            margin: 0;
+        }
+
+        .contact--title-div--second-title__right::after {
+            display: none;
+        }
+
+    }
+
+    .contact--title-div__right {
+        align-self: flex-end;
+    }
+
+    .contact--info--list {
+        list-style-type: none;
+        text-align: right;
+        padding-right: 75+10+2px;  // 75px du hr width + 10 du hr margin + 2 des borders du hr;
+        font-family: $content-font;
+        font-size: 0.6875rem;
+        color: white;
+    }
+
+    .contact--info--list--element__highlighted {
+        color: $yellow;
+    }
+
+    .contact--info--list--element__adress::before {
+        color: $yellow;
+        font-size: 0.75rem;
+        padding-right: 10px;
+        content: "<<";
+    }
 }
