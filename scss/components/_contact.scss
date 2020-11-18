@@ -81,8 +81,27 @@
 .send-input {
     width: 33%;
     color: white;
-    background-color: $yellow;
+    background-color: $orange;
     align-self: flex-end;
+    cursor: pointer;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.send-input:hover {
+    background-color: $yellow;
+}
+
+.send-input::before {
+    content: "<";
+    color: white;
+}
+
+.send-input::after {
+    content: "/>";
+    color: white;  
 }
 
 
@@ -123,23 +142,40 @@
         align-self: flex-end;
     }
 
-    .contact--info--list {
-        list-style-type: none;
-        text-align: right;
-        padding-right: 75+10+2px;  // 75px du hr width + 10 du hr margin + 2 des borders du hr;
-        font-family: $content-font;
-        font-size: 0.6875rem;
-        color: white;
+
+    .contact--info--list--container {
+        display: flex;
+        justify-content: space-between;
+
+        .contact--info--list {
+            list-style-type: none;
+            text-align: right;
+            padding-right: 75+10+2px;  // 75px du hr width + 10 du hr margin + 2 des borders du hr;
+            padding-left: 0;
+            font-family: $content-font;
+            font-size: 0.6875rem;
+            color: white;
+            width: 38%;
+            align-self: flex-end;
+        }
+    
+        .contact--info--list--element__highlighted {
+            color: $yellow;
+        }
+    
+        .contact--info--list--element__adress::before {
+            color: $yellow;
+            font-size: 0.75rem;
+            padding-right: 10px;
+            content: "<<";
+        }
+    
+        .gmap {
+            width: 30%;
+            height: 100px;
+            padding-left: 15px;
+        }
     }
 
-    .contact--info--list--element__highlighted {
-        color: $yellow;
-    }
 
-    .contact--info--list--element__adress::before {
-        color: $yellow;
-        font-size: 0.75rem;
-        padding-right: 10px;
-        content: "<<";
-    }
 }

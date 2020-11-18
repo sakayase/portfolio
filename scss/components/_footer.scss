@@ -1,0 +1,31 @@
+
+.footer--reseaux {
+    display: flex;
+    justify-content: center;
+
+    
+    svg {
+        margin: 10px;
+        fill: $yellow;
+        opacity: 0.33;
+        width: 25px;
+        height: auto;
+    }
+
+    svg:hover {
+        fill: $orange;
+        opacity: 0.88;
+    }
+}
+
+
+.copyright {
+    font-family: $list-font;
+    margin: 0;
+    color: $yellow;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.6rem;
+    opacity: 0.88;
+}
+

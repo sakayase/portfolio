@@ -222,8 +222,24 @@ ul {
 .send-input {
   width: 33%;
   color: white;
-  background-color: #FFC700;
-  align-self: flex-end; }
+  background-color: #FF9900;
+  align-self: flex-end;
+  cursor: pointer;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600; }
+
+.send-input:hover {
+  background-color: #FFC700; }
+
+.send-input::before {
+  content: "<";
+  color: white; }
+
+.send-input::after {
+  content: "/>";
+  color: white; }
 
 .contact--info {
   display: flex;
@@ -246,17 +262,49 @@ ul {
       display: none; }
   .contact--info .contact--title-div__right {
     align-self: flex-end; }
-  .contact--info .contact--info--list {
-    list-style-type: none;
-    text-align: right;
-    padding-right: 87px;
-    font-family: "Ubuntu Mono", monospace;
-    font-size: 0.6875rem;
-    color: white; }
-  .contact--info .contact--info--list--element__highlighted {
-    color: #FFC700; }
-  .contact--info .contact--info--list--element__adress::before {
-    color: #FFC700;
-    font-size: 0.75rem;
-    padding-right: 10px;
-    content: "<<"; }
+  .contact--info .contact--info--list--container {
+    display: flex;
+    justify-content: space-between; }
+    .contact--info .contact--info--list--container .contact--info--list {
+      list-style-type: none;
+      text-align: right;
+      padding-right: 87px;
+      padding-left: 0;
+      font-family: "Ubuntu Mono", monospace;
+      font-size: 0.6875rem;
+      color: white;
+      width: 38%;
+      align-self: flex-end; }
+    .contact--info .contact--info--list--container .contact--info--list--element__highlighted {
+      color: #FFC700; }
+    .contact--info .contact--info--list--container .contact--info--list--element__adress::before {
+      color: #FFC700;
+      font-size: 0.75rem;
+      padding-right: 10px;
+      content: "<<"; }
+    .contact--info .contact--info--list--container .gmap {
+      width: 30%;
+      height: 100px;
+      padding-left: 15px; }
+
+.footer--reseaux {
+  display: flex;
+  justify-content: center; }
+  .footer--reseaux svg {
+    margin: 10px;
+    fill: #FFC700;
+    opacity: 0.33;
+    width: 25px;
+    height: auto; }
+  .footer--reseaux svg:hover {
+    fill: #FF9900;
+    opacity: 0.88; }
+
+.copyright {
+  font-family: "VT323", monospace;
+  margin: 0;
+  color: #FFC700;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.6rem;
+  opacity: 0.88; }
