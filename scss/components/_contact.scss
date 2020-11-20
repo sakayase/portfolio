@@ -87,7 +87,8 @@
     height: 25px;
     border: none;
     border-radius: 5px;
-    font-weight: 600;
+    font-family: $list-font;
+    font-weight: 400;
 }
 
 .send-input:hover {
@@ -122,6 +123,7 @@
             width: 75px;
             height: 0.0001rem;
             align-self: center;
+            color: $yellow;
         }
         
         .contact--title-div--hr__right {
@@ -155,7 +157,7 @@
             font-family: $content-font;
             font-size: 0.6875rem;
             color: white;
-            width: 38%;
+            width: auto;
             align-self: flex-end;
         }
     

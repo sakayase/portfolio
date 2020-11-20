@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 95%;
+    margin-bottom: 50px;
 
     &>* { /* tt les enfants de .about (parent) */
         margin: 0px;
@@ -58,6 +59,7 @@
 .hobby {
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
 
     &>* { /* tt les enfants de .hobby (parent) */
         margin: 0px;
@@ -140,6 +142,7 @@
 .portfolio {
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
 
     &>* { /* tt les enfants de .portfolio (parent) */
         margin: 0px;

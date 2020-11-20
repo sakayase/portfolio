@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    color:white;
+
+    .header--logo {
+        width: 75px;
+    }
+    .header--title-container {
+        margin-top: 45px;
+        text-align: center;
+        >* {
+            margin: 0;
+            font-family: $main-title-font;
+        }
+        .header--main-title {
+            font-size: 2rem;
+        }
+        .header--second-title {
+            font-size: 1.5rem;
+        }
+        .header--second-title::before {
+            display: none;
+        }
+        .header--second-title::after {
+            display: none;
+        }
+        .header--paragraph {
+            font-size: 0.9rem;
+        }
+        .header--name {
+            color: $orange;
+        }
+        .header--portrait {
+            width: 80%;
+            margin: 10px 0 70px 0;
+        }
+    }
+
+
+}
+
+.nav-link::after {
+    content: "/>";
+    color: $yellow;
+}
+
