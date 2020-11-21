@@ -1,5 +1,4 @@
 @media screen and (min-width: 1440px) {
-
     body {
         width: 80%;
         margin: 0 auto;
@@ -8,32 +7,82 @@
     }
     .header {
         margin-top: 25px;
-
+        margin-bottom: 20%;
         .navbar {
             font-size: 1.2rem;
-
             .header--logo {
-                width: 150px;
-
-                
+                width: 150px;              
             }
         }
-
         .header--title-container {
             display: flex;
             justify-content: flex-end;
             align-items: center;
-
+            position: relative;
             .header--portrait {
                 width: 25%;
-                margin-right: 18%;
+                margin-right: 10%;
             }
-
             .header--titles {
                 position: absolute;
-                margin-right: 25%;
-                
+                width: 100%;
+
+                .header--main-title {
+                    font-size: 5rem;
+                }
+                .header--second-title {
+                    font-size: 3.5rem;
+                }  
+                .header--paragraph {
+                    font-size: 2rem;
+                }
             }
+        }
+    }
+
+
+    .about {
+        width: 100%;
+        .about--main-title {
+            font-size: 3rem;
+            width: 25%;
+            text-align: right;
+        }
+        .about--title-div--second-title {
+            font-size: 1.5rem;
+        }
+        .about--title-div--hr {
+            width: 25% !important;
+        }
+        .about--description, .about--list{
+            width: 60%;
+            font-size: 1rem;
+            padding-left: 25%;
+            margin-left: 10px;
+        }
+    }
+
+
+    .hobby {
+        .hobby--main-title {
+            font-size: 3rem;
+            width: 25%;
+            text-align: right;
+        }
+        .hobby--title-div--second-title {
+            font-size: 1.5rem;
+        }
+        .hobby--title-div {
+            width: 100%;
+        }
+        .hobby--title-div--hr {
+            width: 25% !important;
+        }
+        .hobby--description{
+            width: 60%;
+            font-size: 1rem;
+            padding-left: 25%;
+            margin-left: 10px;
         }
     }
 }

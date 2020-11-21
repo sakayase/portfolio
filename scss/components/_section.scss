@@ -42,6 +42,10 @@
         margin-bottom: 5px;
     }
 
+    .about--description__uppercase {
+        text-transform: uppercase;
+    }
+
     .about--list {
         padding-left: 110+10+2px;  // 110px du hr width + 10 du hr margin + 2 des borders du hr
         display: flex;

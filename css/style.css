@@ -7228,9 +7228,13 @@ img {
       font-size: 0.9rem; }
     .header .header--title-container .header--name {
       color: #FF9900; }
+    .header .header--title-container .header--titles {
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      z-index: 1; }
     .header .header--title-container .header--portrait {
       width: 80%;
-      margin: 10px 0 70px 0; }
+      margin: 10px 0 70px 0;
+      filter: sepia(0.5); }
 
 .nav-link::after {
   content: "/>";
@@ -7263,6 +7267,8 @@ img {
     padding-left: 122px;
     font-size: 0.6875rem;
     margin-bottom: 5px; }
+  .about .about--description__uppercase {
+    text-transform: uppercase; }
   .about .about--list {
     padding-left: 122px;
     display: flex;
@@ -7515,7 +7521,8 @@ img {
     margin: 0 auto;
     border: 1px #FFC700 solid; }
   .header {
-    margin-top: 25px; }
+    margin-top: 25px;
+    margin-bottom: 20%; }
     .header .navbar {
       font-size: 1.2rem; }
       .header .navbar .header--logo {
@@ -7523,10 +7530,47 @@ img {
     .header .header--title-container {
       display: flex;
       justify-content: flex-end;
-      align-items: center; }
+      align-items: center;
+      position: relative; }
       .header .header--title-container .header--portrait {
         width: 25%;
-        margin-right: 18%; }
+        margin-right: 10%; }
       .header .header--title-container .header--titles {
         position: absolute;
-        margin-right: 25%; } }
+        width: 100%; }
+        .header .header--title-container .header--titles .header--main-title {
+          font-size: 5rem; }
+        .header .header--title-container .header--titles .header--second-title {
+          font-size: 3.5rem; }
+        .header .header--title-container .header--titles .header--paragraph {
+          font-size: 2rem; }
+  .about {
+    width: 100%; }
+    .about .about--main-title {
+      font-size: 3rem;
+      width: 25%;
+      text-align: right; }
+    .about .about--title-div--second-title {
+      font-size: 1.5rem; }
+    .about .about--title-div--hr {
+      width: 25% !important; }
+    .about .about--description, .about .about--list {
+      width: 60%;
+      font-size: 1rem;
+      padding-left: 25%;
+      margin-left: 10px; }
+  .hobby .hobby--main-title {
+    font-size: 3rem;
+    width: 25%;
+    text-align: right; }
+  .hobby .hobby--title-div--second-title {
+    font-size: 1.5rem; }
+  .hobby .hobby--title-div {
+    width: 100%; }
+  .hobby .hobby--title-div--hr {
+    width: 25% !important; }
+  .hobby .hobby--description {
+    width: 60%;
+    font-size: 1rem;
+    padding-left: 25%;
+    margin-left: 10px; } }
