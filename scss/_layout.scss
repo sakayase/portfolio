@@ -1,0 +1,39 @@
+@media screen and (min-width: 1440px) {
+
+    body {
+        width: 80%;
+        margin: 0 auto;
+        border: 1px $yellow solid;
+
+    }
+    .header {
+        margin-top: 25px;
+
+        .navbar {
+            font-size: 1.2rem;
+
+            .header--logo {
+                width: 150px;
+
+                
+            }
+        }
+
+        .header--title-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .header--portrait {
+                width: 25%;
+                margin-right: 18%;
+            }
+
+            .header--titles {
+                position: absolute;
+                margin-right: 25%;
+                
+            }
+        }
+    }
+}
