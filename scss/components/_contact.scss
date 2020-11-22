@@ -159,7 +159,7 @@
             font-size: 0.6875rem;
             color: white;
             width: auto;
-            align-self: flex-end;
+            align-self: flex-start;
         }
     
         .contact--info--list--element__highlighted {
@@ -175,8 +175,9 @@
     
         .gmap {
             width: 30%;
-            height: 100px;
             padding-left: 15px;
+            height: 100px;
+            margin: 0 auto;
         }
     }
 

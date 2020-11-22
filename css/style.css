@@ -7480,7 +7480,7 @@ img {
       font-size: 0.6875rem;
       color: white;
       width: auto;
-      align-self: flex-end; }
+      align-self: flex-start; }
     .contact--info .contact--info--list--container .contact--info--list--element__highlighted {
       color: #FFC700; }
     .contact--info .contact--info--list--container .contact--info--list--element__adress::before {
@@ -7490,8 +7490,9 @@ img {
       content: "<<"; }
     .contact--info .contact--info--list--container .gmap {
       width: 30%;
+      padding-left: 15px;
       height: 100px;
-      padding-left: 15px; }
+      margin: 0 auto; }
 
 .footer--reseaux {
   display: flex;
@@ -7566,11 +7567,90 @@ img {
   .hobby .hobby--title-div--second-title {
     font-size: 1.5rem; }
   .hobby .hobby--title-div {
+    display: flex;
     width: 100%; }
+  .hobby .hobby--title-div__right {
+    justify-content: flex-end; }
   .hobby .hobby--title-div--hr {
     width: 25% !important; }
   .hobby .hobby--description {
-    width: 60%;
-    font-size: 1rem;
+    width: auto;
+    font-size: 1rem; }
+  .hobby .hobby--description__left {
     padding-left: 25%;
-    margin-left: 10px; } }
+    margin-left: 10px; }
+  .hobby .hobby--description__right {
+    margin-right: 25%;
+    padding-right: 10px; }
+  .hobby .hobby--img-container {
+    display: flex;
+    margin-left: 25%;
+    padding-left: 10px; }
+    .hobby .hobby--img-container .hobby--image {
+      width: 30%;
+      margin: 1%; }
+  .hobby .hobby--image {
+    width: 40%; }
+  .hobby .hobby--image__left {
+    margin-left: 25%;
+    padding-left: 10px; }
+  .hobby .hobby--image__right {
+    margin-right: 25%;
+    padding-right: 10px; }
+  .portfolio .portfolio--main-title {
+    font-size: 3rem;
+    width: 25%;
+    text-align: right; }
+  .portfolio .portfolio--title-div--second-title {
+    font-size: 1.5rem; }
+  .portfolio .portfolio--title-div {
+    display: flex;
+    width: 100%; }
+  .portfolio .portfolio--title-div__right {
+    justify-content: flex-end; }
+  .portfolio .portfolio--title-div--hr {
+    width: 25% !important; }
+  .portfolio .portfolio--description {
+    width: auto;
+    font-size: 1rem; }
+  .portfolio .portfolio--description__left {
+    padding-left: 25%;
+    margin-left: 10px; }
+  .portfolio .portfolio--description__right {
+    margin-right: 25%;
+    padding-right: 10px; }
+  .contact .contact--title {
+    font-size: 3rem;
+    margin: 0; }
+  .contact .contact--title--hr {
+    display: block;
+    margin: auto; }
+  .contact .contact--form {
+    width: 40%;
+    margin: 10px auto 20px 10%; }
+  .contact .contact--title-div {
+    width: 100%;
+    display: flex;
+    margin-top: 10%; }
+    .contact .contact--title-div .contact--title-div--hr {
+      width: 25%; }
+    .contact .contact--title-div .contact--title-div--second-title {
+      font-size: 1.5rem; }
+  .contact .contact--title-div__right {
+    justify-content: flex-end; }
+  .contact .contact--info--list--container {
+    height: 300px;
+    margin-bottom: 10%; }
+    .contact .contact--info--list--container .contact--info--list {
+      padding-right: 10px !important;
+      margin-right: 25%; }
+      .contact .contact--info--list--container .contact--info--list .contact--info--list--element {
+        font-size: 1rem; }
+    .contact .contact--info--list--container .gmap {
+      margin-left: 10%;
+      height: 100%; }
+  .footer .footer--reseaux svg {
+    width: 100px;
+    margin: 0 40px; }
+  .footer .copyright {
+    font-size: 1rem; } }

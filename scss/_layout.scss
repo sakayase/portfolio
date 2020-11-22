@@ -73,16 +73,139 @@
             font-size: 1.5rem;
         }
         .hobby--title-div {
+            display: flex;
             width: 100%;
+        }
+        .hobby--title-div__right {
+            justify-content: flex-end;
         }
         .hobby--title-div--hr {
             width: 25% !important;
         }
-        .hobby--description{
-            width: 60%;
+        .hobby--description {
+            width: auto;
             font-size: 1rem;
+        }
+        .hobby--description__left {
             padding-left: 25%;
-            margin-left: 10px;
+            margin-left: 10px;    
+        }
+        .hobby--description__right {
+            margin-right: 25%;
+            padding-right: 10px;
+        }
+        .hobby--img-container {
+            display: flex;
+            margin-left: 25%;
+            padding-left: 10px;
+            .hobby--image {
+                width: 30%;     // image jeux videos
+                margin: 1%;
+            }
+        }
+        .hobby--image {
+            width: 40%;
+        }
+        .hobby--image__left {
+            margin-left: 25%;
+            padding-left: 10px;
+        }
+        .hobby--image__right {
+            margin-right: 25%;
+            padding-right: 10px;
+        }
+    }
+
+
+    .portfolio {
+        .portfolio--main-title {
+            font-size: 3rem;
+            width: 25%;
+            text-align: right;
+        }
+        .portfolio--title-div--second-title {
+            font-size: 1.5rem;
+        }
+        .portfolio--title-div {
+            display: flex;
+            width: 100%;
+        }
+        .portfolio--title-div__right {
+            justify-content: flex-end;
+        }
+        .portfolio--title-div--hr {
+            width: 25% !important;
+        }
+        .portfolio--description {
+            width: auto;
+            font-size: 1rem;
+        }
+        .portfolio--description__left {
+            padding-left: 25%;
+            margin-left: 10px;    
+        }
+        .portfolio--description__right {
+            margin-right: 25%;
+            padding-right: 10px;
+        }
+    }
+
+
+    .contact {
+        .contact--title {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .contact--title--hr {
+            display: block;
+            margin: auto;
+        }
+        .contact--form {
+            width: 40%;
+            margin: 10px auto 20px 10%;
+        }
+        .contact--title-div {
+            width: 100%;
+            display: flex;
+            margin-top: 10%;
+            .contact--title-div--hr {
+                width: 25%;
+            }
+            .contact--title-div--second-title {
+                font-size: 1.5rem;
+            }
+        }
+        .contact--title-div__right {
+            justify-content: flex-end;
+        }
+        .contact--info--list--container{
+            height: 300px;
+            margin-bottom: 10%;
+            .contact--info--list {
+                padding-right: 10px !important;
+                margin-right: 25%;
+                .contact--info--list--element {
+                    font-size: 1rem;
+                }
+            }    
+            .gmap {
+                margin-left: 10%;
+                height: 100%;
+            }    
+        }
+    }
+    
+
+    .footer {
+        .footer--reseaux{
+            svg {
+                width: 100px;
+                margin: 0 40px;
+            }
+        }
+        .copyright {
+            font-size: 1rem;
         }
     }
 }
+
