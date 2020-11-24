@@ -5,6 +5,7 @@
     "jquery": "^3.5.1",
     "live-server": "^1.2.1",
     "node-sass": "^5.0.0",
+    "normalize.css": "^8.0.1",
     "popper.js": "^1.16.1"
   },
   "name": "cv",
@@ -12,12 +13,18 @@
   "main": "index.js",
   "scripts": {
     "sass": "node-sass scss/main.scss css/style.css",
-    "dev": "concurrently \"node-sass scss/main.scss css/style.css --watch\" \"live-server\""
+    "dev": "concurrently \"node-sass scss/main.scss css/style.css --watch\" \"live-server\"",
+    "build": "node-sass scss/main.scss css/style.css && postcss css/style.css --replace"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "exports-loader": "^1.1.1"
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "autoprefixer": "^10.0.2",
+    "cssnano": "^4.1.10",
+    "exports-loader": "^1.1.1",
+    "postcss": "^8.1.10",
+    "postcss-cli": "^8.3.0"
   }
 }
