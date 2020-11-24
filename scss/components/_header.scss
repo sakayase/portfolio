@@ -51,3 +51,13 @@
     color: $yellow;
 }
 
+.nav-link__svg::after {
+    content: '';
+    color: transparent;
+}
+
+.header--navbar--list--svg-cv {
+    fill: $orange;
+    width: 50px;
+}
+

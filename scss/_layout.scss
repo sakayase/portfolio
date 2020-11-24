@@ -1,13 +1,7 @@
-@media screen and (min-width: 1440px) {
-    body {
-        width: 80%;
-        margin: 0 auto;
-        border: 1px $yellow solid;
-
-    }
+@media screen and (min-width: 900px) {
     .header {
         margin-top: 25px;
-        margin-bottom: 20%;
+        margin-bottom: 10%;
         .navbar {
             font-size: 1.2rem;
             .header--logo {
@@ -28,13 +22,13 @@
                 width: 100%;
 
                 .header--main-title {
-                    font-size: 5rem;
+                    font-size: 3rem;
                 }
                 .header--second-title {
-                    font-size: 3.5rem;
+                    font-size: 2rem;
                 }  
                 .header--paragraph {
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -94,17 +88,9 @@
             margin-right: 25%;
             padding-right: 10px;
         }
-        .hobby--img-container {
-            display: flex;
-            margin-left: 25%;
-            padding-left: 10px;
-            .hobby--image {
-                width: 30%;     // image jeux videos
-                margin: 1%;
-            }
-        }
+        
         .hobby--image {
-            width: 40%;
+            width: 60%;
         }
         .hobby--image__left {
             margin-left: 25%;
@@ -129,6 +115,7 @@
         .portfolio--title-div {
             display: flex;
             width: 100%;
+            margin-top: 4%;
         }
         .portfolio--title-div__right {
             justify-content: flex-end;
@@ -150,7 +137,7 @@
         }
     }
 
-
+    
     .contact {
         .contact--title {
             font-size: 3rem;
@@ -167,7 +154,7 @@
         .contact--title-div {
             width: 100%;
             display: flex;
-            margin-top: 10%;
+            margin-top: 5%;
             .contact--title-div--hr {
                 width: 25%;
             }
@@ -179,8 +166,8 @@
             justify-content: flex-end;
         }
         .contact--info--list--container{
-            height: 300px;
-            margin-bottom: 10%;
+            height: 150px;
+            margin-bottom: 5%;
             .contact--info--list {
                 padding-right: 10px !important;
                 margin-right: 25%;
@@ -199,6 +186,87 @@
     .footer {
         .footer--reseaux{
             svg {
+                width: 75px;
+                margin: 0 40px;
+            }
+        }
+        .copyright {
+            font-size: 0.8rem;
+        }
+    }
+}
+@media screen and (min-width: 1440px) {
+    body {
+        width: 80%;
+        margin: 0 auto;
+        border: 1px $yellow solid;
+
+    }
+    .header {
+        margin-bottom: 10%;
+        .header--title-container {
+            .header--portrait {
+                width: 30%;
+            }
+            .header--titles {
+                .header--main-title {
+                    font-size: 5rem;
+                }
+                .header--second-title {
+                    font-size: 3.5rem;
+                }  
+                .header--paragraph {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+
+    .hobby {
+        .hobby--img-container {
+            display: flex;
+            margin-left: 25%;
+            padding-left: 10px;
+            .hobby--image {
+                width: 30%;     // image jeux videos
+                margin: 1%;
+            }
+        }
+        .hobby--image {
+            width: 60%;
+        }
+    }
+
+
+    .portfolio {
+        .portfolio--title-div {
+            margin-top: 10%;
+        }
+        .portfolio--title-div__start {
+            margin-top: 0;
+        }
+    }
+
+
+    .contact {
+        .container--contact--title {
+            margin-top: 100px;
+        }
+        .contact--info--list--container{
+            height: 300px;
+            margin-bottom: 10%;    
+        }
+        .contact--title-div {
+            margin-top: 10%;
+        }
+
+    }
+    
+
+    .footer {
+        .footer--reseaux{
+            svg {
                 width: 100px;
                 margin: 0 40px;
             }
@@ -209,3 +277,8 @@
     }
 }
 
+@media screen and (min-width: 2000px) {
+    body {
+        width: 1600px;
+    }
+}
