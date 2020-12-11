@@ -219,4 +219,12 @@
         width: 90%;
         margin: 10px 5% 10px 5%;
     }
+    .portfolio--link--calc {
+        display: flex;
+        justify-content: center;
+    }
+    .portfolio--image--calc {
+        width: auto;
+        justify-self: flex-end;
+    }
 }
