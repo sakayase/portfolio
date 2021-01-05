@@ -13,3 +13,8 @@ Une base à exploiter pour votre site web: https://github.com/jblavisse/sass-boo
 
 ATTENTION! Mettre node_modules dans .gitignore avant!
 Rendu: Lien git du projet + URL (netlify?)
+
+
+# TO DO :
+- Replacer balise h1 pour referencement
+- Mettre balise meta head pour referencement
